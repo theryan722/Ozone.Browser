@@ -89,11 +89,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Tabs.vb" />
+    <Compile Include="Classes\XDockContent.vb" />
     <Compile Include="Forms\frmManager.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmManager.Designer.vb">
       <DependentUpon>frmManager.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Tabs\Tab_Bookmarks.Designer.vb">
@@ -157,6 +164,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\frmManager.resx">
       <DependentUpon>frmManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
