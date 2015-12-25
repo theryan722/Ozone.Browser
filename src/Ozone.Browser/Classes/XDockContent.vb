@@ -1,6 +1,6 @@
 ﻿Imports WeifenLuo.WinFormsUI.Docking
 
-Friend Class XDockContent
+Public Class XDockContent
     Inherits WeifenLuo.WinFormsUI.Docking.DockContent
 
     Public Overloads Sub Show(dPanel As DockPanel, dState As DockState, floatWindowBounds As Rectangle)

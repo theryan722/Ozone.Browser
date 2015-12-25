@@ -89,7 +89,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Tabs.vb" />
-    <Compile Include="Classes\XDockContent.vb" />
+    <Compile Include="Classes\XDockContent.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmManager.vb">
       <SubType>Form</SubType>
     </Compile>
