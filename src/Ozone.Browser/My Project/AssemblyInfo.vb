@@ -9,10 +9,10 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Ozone.Browser")>
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("Open Source Web Browser")>
+<Assembly: AssemblyCompany("Ryan O'Day")>
 <Assembly: AssemblyProduct("Ozone.Browser")>
-<Assembly: AssemblyCopyright("Copyright ©  2015")> 
+<Assembly: AssemblyCopyright("Copyright ©  2015 Ryan O'Day")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
