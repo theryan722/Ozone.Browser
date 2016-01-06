@@ -30,7 +30,9 @@
 #Region "Buttons"
 
     Private Sub btn_forward_Click(sender As Object, e As EventArgs) Handles btn_forward.Click
-
+        If AddressBox1.WebControl.CanGoForward Then
+            AddressBox1.WebControl.GoForward()
+        End If
     End Sub
 
     Private Sub btn_back_Click(sender As Object, e As EventArgs) Handles btn_back.Click
