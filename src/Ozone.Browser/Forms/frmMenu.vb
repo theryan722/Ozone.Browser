@@ -56,11 +56,11 @@ Public Class frmMenu
     End Sub
 
     Private Sub btn_menu_Click(sender As Object, e As EventArgs) Handles btn_menu.Click
-        Dim newb As New frmMenuExtended
-        Dim p As Point = Cursor.Position
-        p.Offset(-frmMenuExtended.Width \ 2, -frmMenuExtended.Height \ 2)
-        frmMenuExtended.Location = p
-        frmMenuExtended.Show()
+        If frmManager.pnl_menuextended.Visible Then
+            frmManager.pnl_menuextended.Hide()
+        Else
+            frmManager.pnl_menuextended.Show()
+        End If
     End Sub
 
     Private Sub btn_refresh_stop_Click(sender As Object, e As EventArgs) Handles btn_refresh_stop.Click
