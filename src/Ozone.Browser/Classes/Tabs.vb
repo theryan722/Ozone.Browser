@@ -13,6 +13,16 @@ Public Class Tabs
 
 #End Region
 
+#Region "Downloads"
+
+    Public Shared Sub AddDownloads()
+        Dim newtab As New Tab_Downloads
+        newtab.Show(frmManager.DockPanel1, DockState.Document)
+        frmManager.SetActiveForm(newtab)
+    End Sub
+
+#End Region
+
     Public Shared Sub AddBookmarks()
         Dim newtab As New Tab_Bookmarks
         newtab.Show(frmManager.DockPanel1, DockState.Document)
