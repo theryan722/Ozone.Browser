@@ -104,6 +104,7 @@ Partial Class frmManager
         Me.ClientSize = New System.Drawing.Size(885, 567)
         Me.Controls.Add(Me.DockPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.IsMdiContainer = True
         Me.Name = "frmManager"
         Me.Text = "Ozone Browser"
         Me.ResumeLayout(False)

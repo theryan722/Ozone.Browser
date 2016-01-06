@@ -13,7 +13,7 @@
     <AssemblyName>Ozone.Browser</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -31,6 +31,7 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -88,16 +89,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CefSharp">
-      <HintPath>bin\Debug\CefSharp.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="CefSharp.Core">
-      <HintPath>bin\Debug\CefSharp.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="CefSharp.WinForms">
-      <HintPath>bin\Debug\CefSharp.WinForms.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -108,7 +99,8 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="WeifenLuo.WinFormsUI.Docking">
-      <HintPath>..\..\..\DLLS\Organized\WeiFen Luo DockPanelSuite\dockpanelsuite-development_3.0\bin\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+      <HintPath>bin\Debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -127,7 +119,9 @@
   <ItemGroup>
     <Compile Include="Classes\Manager.vb" />
     <Compile Include="Classes\Tabs.vb" />
-    <Compile Include="Classes\XDockContent.vb" />
+    <Compile Include="Classes\XDockContent.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmManager.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -138,35 +132,51 @@
     <Compile Include="Forms\frmMenu.Designer.vb">
       <DependentUpon>frmMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmMenu.vb" />
+    <Compile Include="Forms\frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Tabs\Tab_Bookmarks.Designer.vb">
       <DependentUpon>Tab_Bookmarks.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Tabs\Tab_Bookmarks.vb" />
+    <Compile Include="Forms\Tabs\Tab_Bookmarks.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Tabs\Tab_Browser.Designer.vb">
       <DependentUpon>Tab_Browser.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Tabs\Tab_Browser.vb" />
+    <Compile Include="Forms\Tabs\Tab_Browser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Tabs\Tab_Downloads.Designer.vb">
       <DependentUpon>Tab_Downloads.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Tabs\Tab_Downloads.vb" />
+    <Compile Include="Forms\Tabs\Tab_Downloads.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Tabs\Tab_Extensions.Designer.vb">
       <DependentUpon>Tab_Extensions.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Tabs\Tab_Extensions.vb" />
+    <Compile Include="Forms\Tabs\Tab_Extensions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Tabs\Tab_Help.Designer.vb">
       <DependentUpon>Tab_Help.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Tabs\Tab_Help.vb" />
+    <Compile Include="Forms\Tabs\Tab_Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Tabs\Tab_Options.Designer.vb">
       <DependentUpon>Tab_Options.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Tabs\Tab_Options.vb" />
+    <Compile Include="Forms\Tabs\Tab_Options.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Tabs\Tab_Themes.Designer.vb">
       <DependentUpon>Tab_Themes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Tabs\Tab_Themes.vb" />
+    <Compile Include="Forms\Tabs\Tab_Themes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -211,7 +221,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OB.Path\OB.Path.vbproj">
@@ -232,19 +241,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <Import Project="..\packages\cef.redist.x64.3.2454.1344\build\cef.redist.x64.targets" Condition="Exists('..\packages\cef.redist.x64.3.2454.1344\build\cef.redist.x64.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\cef.redist.x64.3.2454.1344\build\cef.redist.x64.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x64.3.2454.1344\build\cef.redist.x64.targets'))" />
-    <Error Condition="!Exists('..\packages\cef.redist.x86.3.2454.1344\build\cef.redist.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x86.3.2454.1344\build\cef.redist.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.props'))" />
-    <Error Condition="!Exists('..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.targets'))" />
-    <Error Condition="!Exists('..\packages\CefSharp.WinForms.45.0.0\build\CefSharp.WinForms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.WinForms.45.0.0\build\CefSharp.WinForms.props'))" />
-  </Target>
-  <Import Project="..\packages\cef.redist.x86.3.2454.1344\build\cef.redist.x86.targets" Condition="Exists('..\packages\cef.redist.x86.3.2454.1344\build\cef.redist.x86.targets')" />
-  <Import Project="..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
