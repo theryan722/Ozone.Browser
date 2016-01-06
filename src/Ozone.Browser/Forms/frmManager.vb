@@ -2,7 +2,9 @@
 
 #Region "Methods"
 
-
+    Public Sub SetActiveForm(ByVal doc As XDockContent)
+        doc.Activate()
+    End Sub
 
 #End Region
 
