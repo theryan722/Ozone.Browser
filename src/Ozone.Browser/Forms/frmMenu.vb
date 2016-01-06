@@ -10,6 +10,21 @@
         Return AddressBox1.WebControl
     End Function
 
+    Public Sub UpdateMenu()
+        If BookmarkManager.IsBookmarked(AddressBox1.URL.ToString) Then
+            btn_bookmark.BackgroundImage = My.Resources.bookmark_checked
+        Else
+            btn_bookmark.BackgroundImage = My.Resources.bookmark_unchecked
+        End If
+        btn_back.Enabled = AddressBox1.WebControl.CanGoBack
+        btn_forward.Enabled = AddressBox1.WebControl.CanGoForward
+        If AddressBox1.WebControl.IsLoading Then
+            btn_refresh_stop.BackgroundImage = My.Resources._32_stop
+        Else
+            btn_refresh_stop.BackgroundImage = My.Resources._32_refresh
+        End If
+    End Sub
+
 #End Region
 
 #Region "frmMenu"
