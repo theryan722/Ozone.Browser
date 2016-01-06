@@ -3,6 +3,12 @@ Imports WeifenLuo.WinFormsUI.Docking
 
 Public Class Tabs
 
+    Public Shared Sub AddHelp()
+        Dim newtab As New Tab_Help
+        newtab.Show(frmManager.DockPanel1, DockState.Document)
+        frmManager.SetActiveForm(newtab)
+    End Sub
+
     Public Shared Sub AddThemes()
         Dim newtab As New Tab_Themes
         newtab.Show(frmManager.DockPanel1, DockState.Document)
