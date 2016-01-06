@@ -27,6 +27,19 @@
 
 #End Region
 
+#Region "Buttons"
+
+    Private Sub btn_bookmark_Click(sender As Object, e As EventArgs) Handles btn_bookmark.Click
+        If BookmarkManager.IsBookmarked(AddressBox1.URL.ToString) Then
+            BookmarkManager.RemoveFromBookmarks(AddressBox1.URL.ToString)
+        Else
+            BookmarkManager.AddToBookmarks(AddressBox1.URL.ToString)
+        End If
+        UpdateMenu()
+    End Sub
+
+#End Region
+
 #Region "frmMenu"
 
     Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
