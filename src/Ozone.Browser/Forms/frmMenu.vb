@@ -29,6 +29,26 @@
 
 #Region "Buttons"
 
+    Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btn_forward_Click(sender As Object, e As EventArgs) Handles btn_forward.Click
+
+    End Sub
+
+    Private Sub btn_back_Click(sender As Object, e As EventArgs) Handles btn_back.Click
+
+    End Sub
+
+    Private Sub btn_menu_Click(sender As Object, e As EventArgs) Handles btn_menu.Click
+
+    End Sub
+
+    Private Sub btn_refresh_stop_Click(sender As Object, e As EventArgs) Handles btn_refresh_stop.Click
+
+    End Sub
+
     Private Sub btn_bookmark_Click(sender As Object, e As EventArgs) Handles btn_bookmark.Click
         If BookmarkManager.IsBookmark(AddressBox1.URL.ToString) Then
             BookmarkManager.RemoveBookmark(AddressBox1.URL.ToString)
@@ -42,9 +62,7 @@
 
 #Region "frmMenu"
 
-    Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 
 #End Region
 
