@@ -11,7 +11,7 @@
     End Function
 
     Public Sub UpdateMenu()
-        If BookmarkManager.IsBookmarked(AddressBox1.URL.ToString) Then
+        If BookmarkManager.IsBookmark(AddressBox1.URL.ToString) Then
             btn_bookmark.BackgroundImage = My.Resources.bookmark_checked
         Else
             btn_bookmark.BackgroundImage = My.Resources.bookmark_unchecked
@@ -30,10 +30,10 @@
 #Region "Buttons"
 
     Private Sub btn_bookmark_Click(sender As Object, e As EventArgs) Handles btn_bookmark.Click
-        If BookmarkManager.IsBookmarked(AddressBox1.URL.ToString) Then
-            BookmarkManager.RemoveFromBookmarks(AddressBox1.URL.ToString)
+        If BookmarkManager.IsBookmark(AddressBox1.URL.ToString) Then
+            BookmarkManager.RemoveBookmark(AddressBox1.URL.ToString)
         Else
-            BookmarkManager.AddToBookmarks(AddressBox1.URL.ToString)
+            BookmarkManager.AddBookmark(AddressBox1.URL.ToString)
         End If
         UpdateMenu()
     End Sub
