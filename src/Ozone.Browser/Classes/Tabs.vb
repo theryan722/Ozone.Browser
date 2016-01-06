@@ -3,6 +3,16 @@ Imports WeifenLuo.WinFormsUI.Docking
 
 Public Class Tabs
 
+#Region "Browser"
+
+    Public Shared Sub AddBrowser()
+        Dim newtab As New Tab_Browser
+        newtab.Show(frmManager.DockPanel1, DockState.Document)
+        frmManager.SetActiveForm(newtab)
+    End Sub
+
+#End Region
+
     Public Shared Sub AddBookmarks()
         Dim newtab As New Tab_Bookmarks
         newtab.Show(frmManager.DockPanel1, DockState.Document)
@@ -34,3 +44,4 @@ Public Class Tabs
     End Sub
 
 End Class
+
