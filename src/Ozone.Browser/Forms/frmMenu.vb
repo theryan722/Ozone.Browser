@@ -36,7 +36,9 @@
     End Sub
 
     Private Sub btn_back_Click(sender As Object, e As EventArgs) Handles btn_back.Click
-
+        If AddressBox1.WebControl.CanGoBack Then
+            AddressBox1.WebControl.GoBack()
+        End If
     End Sub
 
     Private Sub btn_menu_Click(sender As Object, e As EventArgs) Handles btn_menu.Click
