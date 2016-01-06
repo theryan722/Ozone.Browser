@@ -3,6 +3,12 @@ Imports WeifenLuo.WinFormsUI.Docking
 
 Public Class Tabs
 
+    Public Shared Sub AddBookmarks()
+        Dim newtab As New Tab_Bookmarks
+        newtab.Show(frmManager.DockPanel1, DockState.Document)
+        frmManager.SetActiveForm(newtab)
+    End Sub
+
     Public Shared Sub AddExtensions()
         Dim newtab As New Tab_Extensions
         newtab.Show(frmManager.DockPanel1, DockState.Document)
