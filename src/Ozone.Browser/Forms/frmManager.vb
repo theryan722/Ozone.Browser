@@ -1,7 +1,4 @@
-﻿Imports System.Drawing.Imaging
-Imports System.IO
-
-Public Class frmManager
+﻿Public Class frmManager
 
 #Region "Methods"
 

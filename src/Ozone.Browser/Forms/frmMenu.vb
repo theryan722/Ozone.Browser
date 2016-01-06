@@ -1,4 +1,7 @@
-﻿Public Class frmMenu
+﻿Imports System.Drawing.Imaging
+Imports System.IO
+
+Public Class frmMenu
 
 #Region "Methods"
 
@@ -57,7 +60,11 @@
     End Sub
 
     Private Sub btn_refresh_stop_Click(sender As Object, e As EventArgs) Handles btn_refresh_stop.Click
-
+        If AreSameImage(My.Resources._32_refresh, btn_refresh_stop.BackgroundImage) Then
+            AddressBox1.WebControl.Reload(My.Computer.Keyboard.ShiftKeyDown)
+        Else
+            AddressBox1.WebControl.Stop()
+        End If
     End Sub
 
     Private Sub btn_bookmark_Click(sender As Object, e As EventArgs) Handles btn_bookmark.Click
