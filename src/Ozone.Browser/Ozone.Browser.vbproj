@@ -142,12 +142,6 @@
     <Compile Include="Forms\frmMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmMenuExtended.Designer.vb">
-      <DependentUpon>frmMenuExtended.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmMenuExtended.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\Tabs\Tab_Bookmarks.Designer.vb">
       <DependentUpon>Tab_Bookmarks.vb</DependentUpon>
     </Compile>
@@ -212,9 +206,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmMenuExtended.resx">
-      <DependentUpon>frmMenuExtended.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tabs\Tab_Browser.resx">
       <DependentUpon>Tab_Browser.vb</DependentUpon>

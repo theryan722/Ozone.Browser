@@ -40,15 +40,16 @@ Partial Class frmManager
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmManager))
         Me.DockPanel1 = New WeifenLuo.WinFormsUI.Docking.DockPanel()
         Me.VS2012LightTheme1 = New WeifenLuo.WinFormsUI.Docking.VS2012LightTheme()
+        Me.pnl_menuextended = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'DockPanel1
         '
         Me.DockPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DockPanel1.DockTopPortion = 54.0R
-        Me.DockPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.DockPanel1.Location = New System.Drawing.Point(225, 0)
         Me.DockPanel1.Name = "DockPanel1"
-        Me.DockPanel1.Size = New System.Drawing.Size(885, 567)
+        Me.DockPanel1.Size = New System.Drawing.Size(660, 567)
         DockPanelGradient1.EndColor = System.Drawing.SystemColors.ControlLight
         DockPanelGradient1.StartColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
         AutoHideStripSkin1.DockStripGradient = DockPanelGradient1
@@ -98,12 +99,23 @@ Partial Class frmManager
         Me.DockPanel1.TabIndex = 0
         Me.DockPanel1.Theme = Me.VS2012LightTheme1
         '
+        'pnl_menuextended
+        '
+        Me.pnl_menuextended.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.pnl_menuextended.Dock = System.Windows.Forms.DockStyle.Left
+        Me.pnl_menuextended.Location = New System.Drawing.Point(0, 0)
+        Me.pnl_menuextended.Name = "pnl_menuextended"
+        Me.pnl_menuextended.Size = New System.Drawing.Size(225, 567)
+        Me.pnl_menuextended.TabIndex = 3
+        Me.pnl_menuextended.Visible = False
+        '
         'frmManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(885, 567)
         Me.Controls.Add(Me.DockPanel1)
+        Me.Controls.Add(Me.pnl_menuextended)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.Name = "frmManager"
@@ -113,4 +125,5 @@ Partial Class frmManager
     End Sub
     Friend WithEvents DockPanel1 As WeifenLuo.WinFormsUI.Docking.DockPanel
     Friend WithEvents VS2012LightTheme1 As WeifenLuo.WinFormsUI.Docking.VS2012LightTheme
+    Friend WithEvents pnl_menuextended As Panel
 End Class
