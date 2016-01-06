@@ -45,35 +45,35 @@ Partial Class frmManager
         Me.trackbar_zoom = New System.Windows.Forms.TrackBar()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.pnl_extmenu_edit = New System.Windows.Forms.Panel()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
+        Me.btn_paste = New System.Windows.Forms.Button()
+        Me.btn_copy = New System.Windows.Forms.Button()
+        Me.btn_cut = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button13 = New System.Windows.Forms.Button()
+        Me.btn_extensions = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_more = New System.Windows.Forms.Button()
+        Me.btn_help = New System.Windows.Forms.Button()
+        Me.btn_options = New System.Windows.Forms.Button()
+        Me.btn_exit = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnl_extmenu_2 = New System.Windows.Forms.Panel()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btn_history = New System.Windows.Forms.Button()
+        Me.btn_bookmarks = New System.Windows.Forms.Button()
+        Me.btn_downloads = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.pnl_extmenu_tabs = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btn_newwindow = New System.Windows.Forms.Button()
+        Me.btn_newprivatetab = New System.Windows.Forms.Button()
+        Me.btn_newtab = New System.Windows.Forms.Button()
+        Me.btn_resetzoom = New System.Windows.Forms.Button()
+        Me.lbl_zoomvalue = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button17 = New System.Windows.Forms.Button()
+        Me.btn_print = New System.Windows.Forms.Button()
+        Me.btn_find = New System.Windows.Forms.Button()
         Me.pnl_menuextended.SuspendLayout()
         Me.pnl_extmenu_zoom.SuspendLayout()
         CType(Me.trackbar_zoom, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -203,38 +203,38 @@ Partial Class frmManager
         Me.pnl_extmenu_edit.Size = New System.Drawing.Size(225, 33)
         Me.pnl_extmenu_edit.TabIndex = 9
         '
-        'Button12
+        'btn_paste
         '
-        Me.Button12.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(150, 0)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(75, 30)
-        Me.Button12.TabIndex = 6
-        Me.Button12.Text = "Paste"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.btn_paste.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_paste.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_paste.Location = New System.Drawing.Point(150, 0)
+        Me.btn_paste.Name = "btn_paste"
+        Me.btn_paste.Size = New System.Drawing.Size(75, 30)
+        Me.btn_paste.TabIndex = 6
+        Me.btn_paste.Text = "Paste"
+        Me.btn_paste.UseVisualStyleBackColor = True
         '
-        'Button11
+        'btn_copy
         '
-        Me.Button11.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(75, 0)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(75, 30)
-        Me.Button11.TabIndex = 5
-        Me.Button11.Text = "Copy"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.btn_copy.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btn_copy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_copy.Location = New System.Drawing.Point(75, 0)
+        Me.btn_copy.Name = "btn_copy"
+        Me.btn_copy.Size = New System.Drawing.Size(75, 30)
+        Me.btn_copy.TabIndex = 5
+        Me.btn_copy.Text = "Copy"
+        Me.btn_copy.UseVisualStyleBackColor = True
         '
-        'Button10
+        'btn_cut
         '
-        Me.Button10.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(0, 0)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(75, 30)
-        Me.Button10.TabIndex = 4
-        Me.Button10.Text = "Cut"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.btn_cut.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btn_cut.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cut.Location = New System.Drawing.Point(0, 0)
+        Me.btn_cut.Name = "btn_cut"
+        Me.btn_cut.Size = New System.Drawing.Size(75, 30)
+        Me.btn_cut.TabIndex = 4
+        Me.btn_cut.Text = "Cut"
+        Me.btn_cut.UseVisualStyleBackColor = True
         '
         'Panel5
         '
@@ -247,79 +247,79 @@ Partial Class frmManager
         '
         'Panel6
         '
-        Me.Panel6.Controls.Add(Me.Button13)
+        Me.Panel6.Controls.Add(Me.btn_extensions)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel6.Location = New System.Drawing.Point(0, 190)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(225, 31)
         Me.Panel6.TabIndex = 11
         '
-        'Button13
+        'btn_extensions
         '
-        Me.Button13.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.Location = New System.Drawing.Point(0, 0)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(225, 30)
-        Me.Button13.TabIndex = 4
-        Me.Button13.Text = "Extensions"
-        Me.Button13.UseVisualStyleBackColor = True
+        Me.btn_extensions.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_extensions.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_extensions.Location = New System.Drawing.Point(0, 0)
+        Me.btn_extensions.Name = "btn_extensions"
+        Me.btn_extensions.Size = New System.Drawing.Size(225, 30)
+        Me.btn_extensions.TabIndex = 4
+        Me.btn_extensions.Text = "Extensions"
+        Me.btn_extensions.UseVisualStyleBackColor = True
         '
         'Panel3
         '
-        Me.Panel3.Controls.Add(Me.Button15)
-        Me.Panel3.Controls.Add(Me.Button9)
-        Me.Panel3.Controls.Add(Me.Button8)
-        Me.Panel3.Controls.Add(Me.Button1)
+        Me.Panel3.Controls.Add(Me.btn_more)
+        Me.Panel3.Controls.Add(Me.btn_help)
+        Me.Panel3.Controls.Add(Me.btn_options)
+        Me.Panel3.Controls.Add(Me.btn_exit)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel3.Location = New System.Drawing.Point(0, 466)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(225, 135)
         Me.Panel3.TabIndex = 8
         '
-        'Button15
+        'btn_more
         '
-        Me.Button15.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button15.Location = New System.Drawing.Point(0, 15)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(225, 30)
-        Me.Button15.TabIndex = 3
-        Me.Button15.Text = "More"
-        Me.Button15.UseVisualStyleBackColor = True
+        Me.btn_more.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btn_more.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_more.Location = New System.Drawing.Point(0, 15)
+        Me.btn_more.Name = "btn_more"
+        Me.btn_more.Size = New System.Drawing.Size(225, 30)
+        Me.btn_more.TabIndex = 3
+        Me.btn_more.Text = "More"
+        Me.btn_more.UseVisualStyleBackColor = True
         '
-        'Button9
+        'btn_help
         '
-        Me.Button9.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(0, 45)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(225, 30)
-        Me.Button9.TabIndex = 2
-        Me.Button9.Text = "Help"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.btn_help.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btn_help.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_help.Location = New System.Drawing.Point(0, 45)
+        Me.btn_help.Name = "btn_help"
+        Me.btn_help.Size = New System.Drawing.Size(225, 30)
+        Me.btn_help.TabIndex = 2
+        Me.btn_help.Text = "Help"
+        Me.btn_help.UseVisualStyleBackColor = True
         '
-        'Button8
+        'btn_options
         '
-        Me.Button8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(0, 75)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(225, 30)
-        Me.Button8.TabIndex = 1
-        Me.Button8.Text = "Options"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btn_options.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btn_options.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_options.Location = New System.Drawing.Point(0, 75)
+        Me.btn_options.Name = "btn_options"
+        Me.btn_options.Size = New System.Drawing.Size(225, 30)
+        Me.btn_options.TabIndex = 1
+        Me.btn_options.Text = "Options"
+        Me.btn_options.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btn_exit
         '
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(0, 105)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(225, 30)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Exit"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_exit.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btn_exit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_exit.Location = New System.Drawing.Point(0, 105)
+        Me.btn_exit.Name = "btn_exit"
+        Me.btn_exit.Size = New System.Drawing.Size(225, 30)
+        Me.btn_exit.TabIndex = 0
+        Me.btn_exit.Text = "Exit"
+        Me.btn_exit.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -332,47 +332,47 @@ Partial Class frmManager
         '
         'pnl_extmenu_2
         '
-        Me.pnl_extmenu_2.Controls.Add(Me.Button7)
-        Me.pnl_extmenu_2.Controls.Add(Me.Button6)
-        Me.pnl_extmenu_2.Controls.Add(Me.Button5)
+        Me.pnl_extmenu_2.Controls.Add(Me.btn_history)
+        Me.pnl_extmenu_2.Controls.Add(Me.btn_bookmarks)
+        Me.pnl_extmenu_2.Controls.Add(Me.btn_downloads)
         Me.pnl_extmenu_2.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnl_extmenu_2.Location = New System.Drawing.Point(0, 94)
         Me.pnl_extmenu_2.Name = "pnl_extmenu_2"
         Me.pnl_extmenu_2.Size = New System.Drawing.Size(225, 92)
         Me.pnl_extmenu_2.TabIndex = 5
         '
-        'Button7
+        'btn_history
         '
-        Me.Button7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(0, 60)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(225, 30)
-        Me.Button7.TabIndex = 3
-        Me.Button7.Text = "History"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btn_history.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_history.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_history.Location = New System.Drawing.Point(0, 60)
+        Me.btn_history.Name = "btn_history"
+        Me.btn_history.Size = New System.Drawing.Size(225, 30)
+        Me.btn_history.TabIndex = 3
+        Me.btn_history.Text = "History"
+        Me.btn_history.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btn_bookmarks
         '
-        Me.Button6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(0, 30)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(225, 30)
-        Me.Button6.TabIndex = 2
-        Me.Button6.Text = "Bookmarks"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btn_bookmarks.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_bookmarks.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_bookmarks.Location = New System.Drawing.Point(0, 30)
+        Me.btn_bookmarks.Name = "btn_bookmarks"
+        Me.btn_bookmarks.Size = New System.Drawing.Size(225, 30)
+        Me.btn_bookmarks.TabIndex = 2
+        Me.btn_bookmarks.Text = "Bookmarks"
+        Me.btn_bookmarks.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btn_downloads
         '
-        Me.Button5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(0, 0)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(225, 30)
-        Me.Button5.TabIndex = 1
-        Me.Button5.Text = "Downloads"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btn_downloads.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_downloads.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_downloads.Location = New System.Drawing.Point(0, 0)
+        Me.btn_downloads.Name = "btn_downloads"
+        Me.btn_downloads.Size = New System.Drawing.Size(225, 30)
+        Me.btn_downloads.TabIndex = 1
+        Me.btn_downloads.Text = "Downloads"
+        Me.btn_downloads.UseVisualStyleBackColor = True
         '
         'Panel2
         '
@@ -385,73 +385,73 @@ Partial Class frmManager
         '
         'pnl_extmenu_tabs
         '
-        Me.pnl_extmenu_tabs.Controls.Add(Me.Button3)
-        Me.pnl_extmenu_tabs.Controls.Add(Me.Button4)
-        Me.pnl_extmenu_tabs.Controls.Add(Me.Button2)
+        Me.pnl_extmenu_tabs.Controls.Add(Me.btn_newwindow)
+        Me.pnl_extmenu_tabs.Controls.Add(Me.btn_newprivatetab)
+        Me.pnl_extmenu_tabs.Controls.Add(Me.btn_newtab)
         Me.pnl_extmenu_tabs.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnl_extmenu_tabs.Location = New System.Drawing.Point(0, 0)
         Me.pnl_extmenu_tabs.Name = "pnl_extmenu_tabs"
         Me.pnl_extmenu_tabs.Size = New System.Drawing.Size(225, 90)
         Me.pnl_extmenu_tabs.TabIndex = 4
         '
-        'Button3
+        'btn_newwindow
         '
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(0, 60)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(225, 30)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "New Window"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_newwindow.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_newwindow.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_newwindow.Location = New System.Drawing.Point(0, 60)
+        Me.btn_newwindow.Name = "btn_newwindow"
+        Me.btn_newwindow.Size = New System.Drawing.Size(225, 30)
+        Me.btn_newwindow.TabIndex = 2
+        Me.btn_newwindow.Text = "New Window"
+        Me.btn_newwindow.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btn_newprivatetab
         '
-        Me.Button4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(0, 30)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(225, 30)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "New Private Tab"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btn_newprivatetab.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_newprivatetab.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_newprivatetab.Location = New System.Drawing.Point(0, 30)
+        Me.btn_newprivatetab.Name = "btn_newprivatetab"
+        Me.btn_newprivatetab.Size = New System.Drawing.Size(225, 30)
+        Me.btn_newprivatetab.TabIndex = 3
+        Me.btn_newprivatetab.Text = "New Private Tab"
+        Me.btn_newprivatetab.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_newtab
         '
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(0, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(225, 30)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "New Tab"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_newtab.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_newtab.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_newtab.Location = New System.Drawing.Point(0, 0)
+        Me.btn_newtab.Name = "btn_newtab"
+        Me.btn_newtab.Size = New System.Drawing.Size(225, 30)
+        Me.btn_newtab.TabIndex = 1
+        Me.btn_newtab.Text = "New Tab"
+        Me.btn_newtab.UseVisualStyleBackColor = True
         '
-        'Button14
+        'btn_resetzoom
         '
-        Me.Button14.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button14.Location = New System.Drawing.Point(169, 0)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(56, 20)
-        Me.Button14.TabIndex = 1
-        Me.Button14.Text = "Reset"
-        Me.Button14.UseVisualStyleBackColor = True
+        Me.btn_resetzoom.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_resetzoom.Location = New System.Drawing.Point(169, 0)
+        Me.btn_resetzoom.Name = "btn_resetzoom"
+        Me.btn_resetzoom.Size = New System.Drawing.Size(56, 20)
+        Me.btn_resetzoom.TabIndex = 1
+        Me.btn_resetzoom.Text = "Reset"
+        Me.btn_resetzoom.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lbl_zoomvalue
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 15)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "100%"
+        Me.lbl_zoomvalue.AutoSize = True
+        Me.lbl_zoomvalue.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_zoomvalue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_zoomvalue.Location = New System.Drawing.Point(0, 0)
+        Me.lbl_zoomvalue.Name = "lbl_zoomvalue"
+        Me.lbl_zoomvalue.Size = New System.Drawing.Size(39, 15)
+        Me.lbl_zoomvalue.TabIndex = 2
+        Me.lbl_zoomvalue.Text = "100%"
         '
         'Panel7
         '
-        Me.Panel7.Controls.Add(Me.Label1)
-        Me.Panel7.Controls.Add(Me.Button14)
+        Me.Panel7.Controls.Add(Me.lbl_zoomvalue)
+        Me.Panel7.Controls.Add(Me.btn_resetzoom)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel7.Location = New System.Drawing.Point(0, 24)
         Me.Panel7.Name = "Panel7"
@@ -460,8 +460,8 @@ Partial Class frmManager
         '
         'Panel8
         '
-        Me.Panel8.Controls.Add(Me.Button17)
-        Me.Panel8.Controls.Add(Me.Button16)
+        Me.Panel8.Controls.Add(Me.btn_find)
+        Me.Panel8.Controls.Add(Me.btn_print)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(0, 310)
         Me.Panel8.Name = "Panel8"
@@ -479,36 +479,36 @@ Partial Class frmManager
         '
         'Panel10
         '
-        Me.Panel10.Controls.Add(Me.Button11)
-        Me.Panel10.Controls.Add(Me.Button10)
-        Me.Panel10.Controls.Add(Me.Button12)
+        Me.Panel10.Controls.Add(Me.btn_copy)
+        Me.Panel10.Controls.Add(Me.btn_cut)
+        Me.Panel10.Controls.Add(Me.btn_paste)
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel10.Location = New System.Drawing.Point(0, 0)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(225, 30)
         Me.Panel10.TabIndex = 0
         '
-        'Button16
+        'btn_print
         '
-        Me.Button16.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button16.Location = New System.Drawing.Point(0, 0)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(225, 30)
-        Me.Button16.TabIndex = 5
-        Me.Button16.Text = "Print"
-        Me.Button16.UseVisualStyleBackColor = True
+        Me.btn_print.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_print.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_print.Location = New System.Drawing.Point(0, 0)
+        Me.btn_print.Name = "btn_print"
+        Me.btn_print.Size = New System.Drawing.Size(225, 30)
+        Me.btn_print.TabIndex = 5
+        Me.btn_print.Text = "Print"
+        Me.btn_print.UseVisualStyleBackColor = True
         '
-        'Button17
+        'btn_find
         '
-        Me.Button17.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button17.Location = New System.Drawing.Point(0, 30)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(225, 30)
-        Me.Button17.TabIndex = 6
-        Me.Button17.Text = "Find"
-        Me.Button17.UseVisualStyleBackColor = True
+        Me.btn_find.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_find.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_find.Location = New System.Drawing.Point(0, 30)
+        Me.btn_find.Name = "btn_find"
+        Me.btn_find.Size = New System.Drawing.Size(225, 30)
+        Me.btn_find.TabIndex = 6
+        Me.btn_find.Text = "Find"
+        Me.btn_find.UseVisualStyleBackColor = True
         '
         'frmManager
         '
@@ -541,36 +541,36 @@ Partial Class frmManager
     Friend WithEvents VS2012LightTheme1 As WeifenLuo.WinFormsUI.Docking.VS2012LightTheme
     Friend WithEvents pnl_menuextended As Panel
     Friend WithEvents pnl_extmenu_tabs As Panel
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_newwindow As Button
+    Friend WithEvents btn_newprivatetab As Button
+    Friend WithEvents btn_newtab As Button
+    Friend WithEvents btn_exit As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents pnl_extmenu_2 As Panel
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btn_history As Button
+    Friend WithEvents btn_bookmarks As Button
+    Friend WithEvents btn_downloads As Button
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
+    Friend WithEvents btn_help As Button
+    Friend WithEvents btn_options As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents Button13 As Button
+    Friend WithEvents btn_extensions As Button
     Friend WithEvents pnl_extmenu_edit As Panel
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button15 As Button
+    Friend WithEvents btn_paste As Button
+    Friend WithEvents btn_copy As Button
+    Friend WithEvents btn_cut As Button
+    Friend WithEvents btn_more As Button
     Friend WithEvents Panel4 As Panel
     Friend WithEvents pnl_extmenu_zoom As Panel
     Friend WithEvents trackbar_zoom As TrackBar
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button14 As Button
+    Friend WithEvents lbl_zoomvalue As Label
+    Friend WithEvents btn_resetzoom As Button
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Panel10 As Panel
-    Friend WithEvents Button17 As Button
-    Friend WithEvents Button16 As Button
+    Friend WithEvents btn_find As Button
+    Friend WithEvents btn_print As Button
 End Class
