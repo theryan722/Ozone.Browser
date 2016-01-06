@@ -119,8 +119,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BookmarkManager.vb" />
     <Compile Include="Classes\BrowserHelper.vb" />
+    <Compile Include="Classes\HistoryManager.vb" />
     <Compile Include="Classes\Manager.vb" />
+    <Compile Include="Classes\NotificationManager.vb" />
     <Compile Include="Classes\Tabs.vb" />
     <Compile Include="Classes\XDockContent.vb">
       <SubType>Form</SubType>
