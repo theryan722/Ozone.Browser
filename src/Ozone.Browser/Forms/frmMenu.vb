@@ -2,7 +2,9 @@
 
 #Region "Methods"
 
-
+    Public Sub SetWebControl(ByVal wc As Awesomium.Windows.Forms.WebControl)
+        AddressBox1.WebControl = wc
+    End Sub
 
 #End Region
 
