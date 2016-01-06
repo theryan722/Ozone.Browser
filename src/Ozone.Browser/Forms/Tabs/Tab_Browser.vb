@@ -7,7 +7,7 @@ Public Class Tab_Browser
 
 #End Region
 
-#Region "Events"
+#Region "WebBrowser1"
 
 
 

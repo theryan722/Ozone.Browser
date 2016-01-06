@@ -23,22 +23,22 @@ Partial Class Tab_Browser
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.WebControl1 = New Awesomium.Windows.Forms.WebControl(Me.components)
+        Me.WebBrowser1 = New Awesomium.Windows.Forms.WebControl(Me.components)
         Me.SuspendLayout()
         '
-        'WebControl1
+        'WebBrowser1
         '
-        Me.WebControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WebControl1.Location = New System.Drawing.Point(0, 0)
-        Me.WebControl1.Size = New System.Drawing.Size(284, 261)
-        Me.WebControl1.TabIndex = 0
+        Me.WebBrowser1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebBrowser1.Location = New System.Drawing.Point(0, 0)
+        Me.WebBrowser1.Size = New System.Drawing.Size(284, 261)
+        Me.WebBrowser1.TabIndex = 0
         '
         'Tab_Browser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.WebControl1)
+        Me.Controls.Add(Me.WebBrowser1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Tab_Browser"
@@ -47,5 +47,5 @@ Partial Class Tab_Browser
 
     End Sub
 
-    Private WithEvents WebControl1 As Awesomium.Windows.Forms.WebControl
+    Private WithEvents WebBrowser1 As Awesomium.Windows.Forms.WebControl
 End Class
