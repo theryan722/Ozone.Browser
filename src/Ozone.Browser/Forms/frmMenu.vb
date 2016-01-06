@@ -29,10 +29,6 @@
 
 #Region "Buttons"
 
-    Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub btn_forward_Click(sender As Object, e As EventArgs) Handles btn_forward.Click
 
     End Sub
@@ -62,7 +58,9 @@
 
 #Region "frmMenu"
 
+    Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 
 #End Region
 
