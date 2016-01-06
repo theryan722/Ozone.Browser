@@ -22,10 +22,6 @@
         Manager.InitializeBrowser()
     End Sub
 
-    Private Sub pnl_menuextended_Paint(sender As Object, e As PaintEventArgs) Handles pnl_menuextended.Paint
-
-    End Sub
-
 #End Region
 
 End Class
