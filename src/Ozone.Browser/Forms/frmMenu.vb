@@ -60,6 +60,7 @@ Public Class frmMenu
             frmManager.pnl_menuextended.Hide()
         Else
             frmManager.pnl_menuextended.Show()
+            frmManager.pnl_menuextended.Focus()
         End If
     End Sub
 
