@@ -3,6 +3,8 @@ Imports WeifenLuo.WinFormsUI.Docking
 
 Public Class Tabs
 
+#Region "Tab Items"
+
 #Region "Browser"
 
     Public Shared Sub AddBrowser()
@@ -53,5 +55,6 @@ Public Class Tabs
         frmManager.SetActiveForm(newtab)
     End Sub
 
-End Class
+#End Region
 
+End Class
