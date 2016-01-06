@@ -249,6 +249,18 @@
   <ItemGroup>
     <None Include="Resources\blanktab.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark_unchecked.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -121,4 +121,16 @@
   <data name="blanktab" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blanktab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bookmark_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bookmark_checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bookmark_unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bookmark_unchecked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_32_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\32_refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_32_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\32_stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

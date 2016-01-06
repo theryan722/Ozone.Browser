@@ -45,6 +45,7 @@ Partial Class frmManager
         'DockPanel1
         '
         Me.DockPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DockPanel1.DockTopPortion = 54.0R
         Me.DockPanel1.Location = New System.Drawing.Point(0, 0)
         Me.DockPanel1.Name = "DockPanel1"
         Me.DockPanel1.Size = New System.Drawing.Size(885, 567)
