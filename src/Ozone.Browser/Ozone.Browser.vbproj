@@ -121,6 +121,7 @@
   <ItemGroup>
     <Compile Include="Classes\BookmarkManager.vb" />
     <Compile Include="Classes\BrowserHelper.vb" />
+    <Compile Include="Classes\FormPosition.vb" />
     <Compile Include="Classes\HistoryManager.vb" />
     <Compile Include="Classes\Manager.vb" />
     <Compile Include="Classes\NotificationManager.vb" />
