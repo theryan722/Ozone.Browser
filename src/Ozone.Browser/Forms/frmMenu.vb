@@ -6,6 +6,10 @@
         AddressBox1.WebControl = wc
     End Sub
 
+    Public Function GetWebControl() As Awesomium.Windows.Forms.WebControl
+        Return AddressBox1.WebControl
+    End Function
+
 #End Region
 
 #Region "frmMenu"
