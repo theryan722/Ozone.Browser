@@ -27,7 +27,7 @@
     End Sub
 
     Private Sub btn_downloads_Click(sender As Object, e As EventArgs) Handles btn_downloads.Click
-
+        Tabs.AddDownloads()
     End Sub
 
     Private Sub btn_bookmarks_Click(sender As Object, e As EventArgs) Handles btn_bookmarks.Click
