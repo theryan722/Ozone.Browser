@@ -35,7 +35,7 @@
     End Sub
 
     Private Sub btn_history_Click(sender As Object, e As EventArgs) Handles btn_history.Click
-
+        Tabs.AddHistory()
     End Sub
 
     Private Sub btn_extensions_Click(sender As Object, e As EventArgs) Handles btn_extensions.Click
