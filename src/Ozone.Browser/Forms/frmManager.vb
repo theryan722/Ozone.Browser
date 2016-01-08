@@ -19,7 +19,7 @@
     End Sub
 
     Private Sub btn_newprivatetab_Click(sender As Object, e As EventArgs) Handles btn_newprivatetab.Click
-
+        Tabs.AddBrowser(True)
     End Sub
 
     Private Sub btn_newwindow_Click(sender As Object, e As EventArgs) Handles btn_newwindow.Click
