@@ -92,6 +92,12 @@
 
     Private Sub frmManager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Manager.InitializeBrowser()
+        'Tests
+        Tabs.AddBrowser()
+    End Sub
+
+    Private Sub DockPanel1_ActiveContentChanged(sender As Object, e As EventArgs) Handles DockPanel1.ActiveContentChanged
+        frmMenu.AddressBox1.WebControl = CType(DockPanel1.ActiveDocument, Tab_Browser).WebBrowser1
     End Sub
 
 #End Region

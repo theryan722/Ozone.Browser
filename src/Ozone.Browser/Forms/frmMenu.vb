@@ -93,6 +93,10 @@ Public Class frmMenu
 
     End Sub
 
+    Private Sub btn_go_Click(sender As Object, e As EventArgs) Handles btn_go.Click
+        Navigate(AddressBox1.Text)
+    End Sub
+
 #End Region
 
 End Class
