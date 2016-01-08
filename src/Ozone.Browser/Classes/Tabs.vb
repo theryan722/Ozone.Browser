@@ -7,7 +7,7 @@ Public Class Tabs
 
 #Region "Browser"
 
-    Public Shared Sub AddBrowser()
+    Public Shared Sub AddBrowser(Optional privatetab As Boolean = False)
         Dim newtab As New Tab_Browser
         newtab.Show(frmManager.DockPanel1, DockState.Document)
         frmManager.SetActiveForm(newtab)
