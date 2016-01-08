@@ -4,6 +4,16 @@ Imports System.Net
 
 Public Class BrowserHelper
 
+    Public Shared Function FixUrl(ByVal url As String, Optional forcehttps As Boolean = False)
+        Dim ret As String = ""
+        If url.StartsWith("http://") Or url.StartsWith("https://") Then
+            ret = url
+        Else
+            ret = If(forcehttps, "https://", "http://")
+        End If
+        Return ret
+    End Function
+
     Public Shared Function GetFavicon(longUrl As String) As Image
         Dim url = New Uri(longUrl)
         Try
