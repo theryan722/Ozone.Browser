@@ -41,13 +41,21 @@ Partial Class frmManager
         Me.DockPanel1 = New WeifenLuo.WinFormsUI.Docking.DockPanel()
         Me.VS2012LightTheme1 = New WeifenLuo.WinFormsUI.Docking.VS2012LightTheme()
         Me.pnl_menuextended = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.btn_find = New System.Windows.Forms.Button()
+        Me.btn_print = New System.Windows.Forms.Button()
+        Me.Panel9 = New System.Windows.Forms.Panel()
         Me.pnl_extmenu_zoom = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.lbl_zoomvalue = New System.Windows.Forms.Label()
+        Me.btn_resetzoom = New System.Windows.Forms.Button()
         Me.trackbar_zoom = New System.Windows.Forms.TrackBar()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.pnl_extmenu_edit = New System.Windows.Forms.Panel()
-        Me.btn_paste = New System.Windows.Forms.Button()
+        Me.Panel10 = New System.Windows.Forms.Panel()
         Me.btn_copy = New System.Windows.Forms.Button()
         Me.btn_cut = New System.Windows.Forms.Button()
+        Me.btn_paste = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.btn_extensions = New System.Windows.Forms.Button()
@@ -66,25 +74,17 @@ Partial Class frmManager
         Me.btn_newwindow = New System.Windows.Forms.Button()
         Me.btn_newprivatetab = New System.Windows.Forms.Button()
         Me.btn_newtab = New System.Windows.Forms.Button()
-        Me.btn_resetzoom = New System.Windows.Forms.Button()
-        Me.lbl_zoomvalue = New System.Windows.Forms.Label()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.btn_print = New System.Windows.Forms.Button()
-        Me.btn_find = New System.Windows.Forms.Button()
         Me.pnl_menuextended.SuspendLayout()
+        Me.Panel8.SuspendLayout()
         Me.pnl_extmenu_zoom.SuspendLayout()
+        Me.Panel7.SuspendLayout()
         CType(Me.trackbar_zoom, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_extmenu_edit.SuspendLayout()
+        Me.Panel10.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.pnl_extmenu_2.SuspendLayout()
         Me.pnl_extmenu_tabs.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel8.SuspendLayout()
-        Me.Panel10.SuspendLayout()
         Me.SuspendLayout()
         '
         'DockPanel1
@@ -165,6 +165,47 @@ Partial Class frmManager
         Me.pnl_menuextended.TabIndex = 3
         Me.pnl_menuextended.Visible = False
         '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.btn_find)
+        Me.Panel8.Controls.Add(Me.btn_print)
+        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel8.Location = New System.Drawing.Point(0, 310)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(225, 62)
+        Me.Panel8.TabIndex = 14
+        '
+        'btn_find
+        '
+        Me.btn_find.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_find.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_find.Location = New System.Drawing.Point(0, 30)
+        Me.btn_find.Name = "btn_find"
+        Me.btn_find.Size = New System.Drawing.Size(225, 30)
+        Me.btn_find.TabIndex = 6
+        Me.btn_find.Text = "Find"
+        Me.btn_find.UseVisualStyleBackColor = True
+        '
+        'btn_print
+        '
+        Me.btn_print.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_print.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_print.Location = New System.Drawing.Point(0, 0)
+        Me.btn_print.Name = "btn_print"
+        Me.btn_print.Size = New System.Drawing.Size(225, 30)
+        Me.btn_print.TabIndex = 5
+        Me.btn_print.Text = "Print"
+        Me.btn_print.UseVisualStyleBackColor = True
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel9.Location = New System.Drawing.Point(0, 306)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(225, 4)
+        Me.Panel9.TabIndex = 15
+        '
         'pnl_extmenu_zoom
         '
         Me.pnl_extmenu_zoom.Controls.Add(Me.Panel7)
@@ -174,6 +215,37 @@ Partial Class frmManager
         Me.pnl_extmenu_zoom.Name = "pnl_extmenu_zoom"
         Me.pnl_extmenu_zoom.Size = New System.Drawing.Size(225, 44)
         Me.pnl_extmenu_zoom.TabIndex = 13
+        '
+        'Panel7
+        '
+        Me.Panel7.Controls.Add(Me.lbl_zoomvalue)
+        Me.Panel7.Controls.Add(Me.btn_resetzoom)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel7.Location = New System.Drawing.Point(0, 24)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(225, 20)
+        Me.Panel7.TabIndex = 1
+        '
+        'lbl_zoomvalue
+        '
+        Me.lbl_zoomvalue.AutoSize = True
+        Me.lbl_zoomvalue.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_zoomvalue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_zoomvalue.Location = New System.Drawing.Point(0, 0)
+        Me.lbl_zoomvalue.Name = "lbl_zoomvalue"
+        Me.lbl_zoomvalue.Size = New System.Drawing.Size(39, 15)
+        Me.lbl_zoomvalue.TabIndex = 2
+        Me.lbl_zoomvalue.Text = "100%"
+        '
+        'btn_resetzoom
+        '
+        Me.btn_resetzoom.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_resetzoom.Location = New System.Drawing.Point(169, 0)
+        Me.btn_resetzoom.Name = "btn_resetzoom"
+        Me.btn_resetzoom.Size = New System.Drawing.Size(56, 20)
+        Me.btn_resetzoom.TabIndex = 1
+        Me.btn_resetzoom.Text = "Reset"
+        Me.btn_resetzoom.UseVisualStyleBackColor = True
         '
         'trackbar_zoom
         '
@@ -203,16 +275,16 @@ Partial Class frmManager
         Me.pnl_extmenu_edit.Size = New System.Drawing.Size(225, 33)
         Me.pnl_extmenu_edit.TabIndex = 9
         '
-        'btn_paste
+        'Panel10
         '
-        Me.btn_paste.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btn_paste.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_paste.Location = New System.Drawing.Point(150, 0)
-        Me.btn_paste.Name = "btn_paste"
-        Me.btn_paste.Size = New System.Drawing.Size(75, 30)
-        Me.btn_paste.TabIndex = 6
-        Me.btn_paste.Text = "Paste"
-        Me.btn_paste.UseVisualStyleBackColor = True
+        Me.Panel10.Controls.Add(Me.btn_copy)
+        Me.Panel10.Controls.Add(Me.btn_cut)
+        Me.Panel10.Controls.Add(Me.btn_paste)
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel10.Location = New System.Drawing.Point(0, 0)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(225, 30)
+        Me.Panel10.TabIndex = 0
         '
         'btn_copy
         '
@@ -235,6 +307,17 @@ Partial Class frmManager
         Me.btn_cut.TabIndex = 4
         Me.btn_cut.Text = "Cut"
         Me.btn_cut.UseVisualStyleBackColor = True
+        '
+        'btn_paste
+        '
+        Me.btn_paste.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_paste.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_paste.Location = New System.Drawing.Point(150, 0)
+        Me.btn_paste.Name = "btn_paste"
+        Me.btn_paste.Size = New System.Drawing.Size(75, 30)
+        Me.btn_paste.TabIndex = 6
+        Me.btn_paste.Text = "Paste"
+        Me.btn_paste.UseVisualStyleBackColor = True
         '
         'Panel5
         '
@@ -427,89 +510,6 @@ Partial Class frmManager
         Me.btn_newtab.Text = "New Tab"
         Me.btn_newtab.UseVisualStyleBackColor = True
         '
-        'btn_resetzoom
-        '
-        Me.btn_resetzoom.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btn_resetzoom.Location = New System.Drawing.Point(169, 0)
-        Me.btn_resetzoom.Name = "btn_resetzoom"
-        Me.btn_resetzoom.Size = New System.Drawing.Size(56, 20)
-        Me.btn_resetzoom.TabIndex = 1
-        Me.btn_resetzoom.Text = "Reset"
-        Me.btn_resetzoom.UseVisualStyleBackColor = True
-        '
-        'lbl_zoomvalue
-        '
-        Me.lbl_zoomvalue.AutoSize = True
-        Me.lbl_zoomvalue.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lbl_zoomvalue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_zoomvalue.Location = New System.Drawing.Point(0, 0)
-        Me.lbl_zoomvalue.Name = "lbl_zoomvalue"
-        Me.lbl_zoomvalue.Size = New System.Drawing.Size(39, 15)
-        Me.lbl_zoomvalue.TabIndex = 2
-        Me.lbl_zoomvalue.Text = "100%"
-        '
-        'Panel7
-        '
-        Me.Panel7.Controls.Add(Me.lbl_zoomvalue)
-        Me.Panel7.Controls.Add(Me.btn_resetzoom)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel7.Location = New System.Drawing.Point(0, 24)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(225, 20)
-        Me.Panel7.TabIndex = 1
-        '
-        'Panel8
-        '
-        Me.Panel8.Controls.Add(Me.btn_find)
-        Me.Panel8.Controls.Add(Me.btn_print)
-        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel8.Location = New System.Drawing.Point(0, 310)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(225, 62)
-        Me.Panel8.TabIndex = 14
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel9.Location = New System.Drawing.Point(0, 306)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(225, 4)
-        Me.Panel9.TabIndex = 15
-        '
-        'Panel10
-        '
-        Me.Panel10.Controls.Add(Me.btn_copy)
-        Me.Panel10.Controls.Add(Me.btn_cut)
-        Me.Panel10.Controls.Add(Me.btn_paste)
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel10.Location = New System.Drawing.Point(0, 0)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(225, 30)
-        Me.Panel10.TabIndex = 0
-        '
-        'btn_print
-        '
-        Me.btn_print.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btn_print.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_print.Location = New System.Drawing.Point(0, 0)
-        Me.btn_print.Name = "btn_print"
-        Me.btn_print.Size = New System.Drawing.Size(225, 30)
-        Me.btn_print.TabIndex = 5
-        Me.btn_print.Text = "Print"
-        Me.btn_print.UseVisualStyleBackColor = True
-        '
-        'btn_find
-        '
-        Me.btn_find.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btn_find.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_find.Location = New System.Drawing.Point(0, 30)
-        Me.btn_find.Name = "btn_find"
-        Me.btn_find.Size = New System.Drawing.Size(225, 30)
-        Me.btn_find.TabIndex = 6
-        Me.btn_find.Text = "Find"
-        Me.btn_find.UseVisualStyleBackColor = True
-        '
         'frmManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -522,18 +522,18 @@ Partial Class frmManager
         Me.Name = "frmManager"
         Me.Text = "Ozone Browser"
         Me.pnl_menuextended.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
         Me.pnl_extmenu_zoom.ResumeLayout(False)
         Me.pnl_extmenu_zoom.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
         CType(Me.trackbar_zoom, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_extmenu_edit.ResumeLayout(False)
+        Me.Panel10.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.pnl_extmenu_2.ResumeLayout(False)
         Me.pnl_extmenu_tabs.ResumeLayout(False)
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel7.PerformLayout()
-        Me.Panel8.ResumeLayout(False)
-        Me.Panel10.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
