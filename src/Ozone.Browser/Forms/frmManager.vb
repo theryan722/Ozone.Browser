@@ -39,7 +39,7 @@
     End Sub
 
     Private Sub btn_extensions_Click(sender As Object, e As EventArgs) Handles btn_extensions.Click
-
+        Tabs.AddExtensions()
     End Sub
 
     Private Sub btn_cut_Click(sender As Object, e As EventArgs) Handles btn_cut.Click
