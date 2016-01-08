@@ -5,6 +5,10 @@ Public Class frmMenu
 
 #Region "Methods"
 
+    Private Sub Navigate(ByVal url As String)
+        AddressBox1.WebControl.Source = New Uri(BrowserHelper.FixUrl(url))
+    End Sub
+
     Public Function AreSameImage(ByVal I1 As Image, ByVal I2 As Image) As Boolean
         Dim MS1 As New MemoryStream
         Dim MS2 As New MemoryStream
