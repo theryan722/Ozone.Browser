@@ -25,6 +25,12 @@ Public Class Tabs
 
 #End Region
 
+    Public Shared Sub AddHistory()
+        Dim newtab As New Tab_History
+        newtab.Show(frmManager.DockPanel1, DockState.Document)
+        frmManager.SetActiveForm(newtab)
+    End Sub
+
     Public Shared Sub AddBookmarks()
         Dim newtab As New Tab_Bookmarks
         newtab.Show(frmManager.DockPanel1, DockState.Document)
