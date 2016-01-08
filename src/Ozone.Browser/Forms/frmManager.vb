@@ -75,7 +75,7 @@
     End Sub
 
     Private Sub btn_help_Click(sender As Object, e As EventArgs) Handles btn_help.Click
-
+        Tabs.AddHelp()
     End Sub
 
     Private Sub btn_options_Click(sender As Object, e As EventArgs) Handles btn_options.Click
