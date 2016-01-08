@@ -79,7 +79,7 @@
     End Sub
 
     Private Sub btn_options_Click(sender As Object, e As EventArgs) Handles btn_options.Click
-
+        Tabs.AddOptions()
     End Sub
 
     Private Sub btn_exit_Click(sender As Object, e As EventArgs) Handles btn_exit.Click
