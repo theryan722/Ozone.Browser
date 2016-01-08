@@ -31,7 +31,7 @@
     End Sub
 
     Private Sub btn_bookmarks_Click(sender As Object, e As EventArgs) Handles btn_bookmarks.Click
-
+        Tabs.AddBookmarks()
     End Sub
 
     Private Sub btn_history_Click(sender As Object, e As EventArgs) Handles btn_history.Click
